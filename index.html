@@ -388,26 +388,24 @@
           <label class="modal-textarea">
             <textarea id="comment" name="comment" rows="6" placeholder="Wprowadź tekst"></textarea>
           </label>
-          <div class="modal-checkbox">
-            <div class="modal-checkbox-control">
-              <input
-                type="checkbox"
-                id="rules-privacy-policy"
-                name="rules-privacy-policy"
-                value="agree"
-                class="modal-checkbox-input"
-              />
-              <label class="modal-checkbox-label" for="rules-privacy-policy"
-                ><svg class="modal-checkbox-icon" width="12" height="13">
-                  <use href="./images/icons.svg#icon-tick"></use>
-                </svg>
-              </label>
-            </div>
-            <p class="modal-checkbox-text">
+          <!-- CHECKBOX -->
+          <label class="container-checkbox"
+            ><p class="modal-checkbox-text">
               Oświadczam iż akceptuję <a href="">Regulamin</a> i
               <a href="">Politykę Prywatności</a>.
             </p>
-          </div>
+            <input
+              type="checkbox"
+              id="rules-privacy-policy"
+              name="rules-privacy-policy"
+              value="agree"
+            />
+            <div class="checkmark">
+              <svg class="modal-checkbox-icon" width="12" height="13">
+                <use href="/images/icons.svg#icon-tick"></use>
+              </svg>
+            </div>
+          </label>
           <button class="buttons-main button-modal" type="submit">Wyślij</button>
         </form>
       </div>
