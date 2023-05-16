@@ -53,29 +53,68 @@ body {
 .brand-tertiary-color {
   color: var(--brand-tertiary-color);
 }
-.background-light {
+.background--light {
   background-color: var(--light-background-color);
 }
 /*--- HEADER ---*/
-.header {
+.container--header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
 }
-nav {
+.nav {
   display: inline-flex;
   align-items: center;
   padding: 24px 0px 25px 0px;
 }
-.nav-highlight {
+.logo {
+  font-family: var(--brand-font);
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.19;
+  color: var(--brand-primary-color);
+}
+.logo--dark {
+  color: var(--brand-secondary-color);
+}
+.logo--light {
+  color: var(--brand-tertiary-color);
+}
+.nav__list {
+  display: inline-flex;
+  gap: 46px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav__list--start {
+  margin-left: 93px;
+}
+.nav__highlight {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
-.nav-highlight:hover,
-.nav-highlight:focus {
+.nav__highlight:hover,
+.nav__highlight:focus {
   color: var(--brand-primary-color);
   fill: var(--brand-primary-color);
+}
+.nav__list--contact {
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+  color: var(--text-light-color);
+  fill: var(--text-light-color);
+}
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .active-site::after {
   content: '';
@@ -86,42 +125,6 @@ nav {
   left: 0;
   bottom: -34px;
   border-radius: 2px;
-}
-.logo {
-  font-family: var(--brand-font);
-  font-size: 26px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 1.19;
-}
-.nav,
-.contact {
-  display: inline-flex;
-  gap: 46px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  margin-left: 93px;
-}
-.contact {
-  align-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 15px;
-  color: var(--text-light-color);
-  fill: var(--text-light-color);
-}
-.contact li {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact li:hover {
-  fill: var(--brand-primary-color);
-  color: var(--brand-primary-color);
-}
-.contact-info {
-  display: inline-flex;
-  align-content: center;
-  gap: 10px;
 }
 /*--- HERO ---*/
 .hero {
@@ -252,7 +255,7 @@ nav {
   fill: var(--brand-tertiary-color);
 }
 /*-- CLIENST --*/
-.clients {
+.client {
   display: flex;
   justify-content: space-between;
 }
@@ -359,31 +362,32 @@ nav {
 }
 
 /*--- FOOTER ---*/
-.footer {
+.container--footer {
   padding: 60px 0;
   display: flex;
   justify-content: space-between;
 }
-.background-dark {
+.background--dark {
   background-color: var(--dark-background-color);
 }
 .address {
   display: inline-flex;
   flex-direction: column;
 }
-.address-info,
-.address-info a {
+.address--top {
+  margin-top: 11px;
+}
+.address__info,
+.addres__info--link {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   color: var(--brand-tertiary-color);
   letter-spacing: 0.03em;
   margin-top: 11px;
-}
-.address-info > li {
   margin-top: 9px;
 }
-.address-info a {
+.addres__info--link {
   opacity: 0.6;
 }
 .container__title-s--dark {
@@ -391,27 +395,27 @@ nav {
   margin: 12px 0 20px;
   display: block;
 }
-.icons-dark {
+.social-media__icon--dark {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--brand-tertiary-color);
 }
 /*--- NEWSLETTER ---*/
 
-.newsletter-email input {
+.newsletter__input {
   border: none;
   outline: none;
   background-color: transparent;
   min-width: 328px;
 }
-.newsletter-email {
+.newsletter__email {
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
 }
-.newsletter-email input,
-.newsletter-email input::placeholder {
+.newsletter__input,
+.newsletter__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 25;

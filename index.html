@@ -16,31 +16,29 @@
   </head>
   <body>
     <header>
-      <div class="header container">
+      <div class="container container--header">
         <!-- SITE NAVIGATION -->
-        <nav>
-          <a class="logo brand-main-color" href="index.html"
-            >web<span class="brand-secondary-color">Studio</span></a
-          >
-          <ul class="nav">
-            <li><a class="nav-highlight active-site" href="index.html">Agencja</a></li>
-            <li><a class="nav-highlight" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-highlight" href="#">Kontakt</a></li>
+        <nav class="nav">
+          <a class="logo" href="index.html">web<span class="logo--dark">Studio</span></a>
+          <ul class="nav__list nav__list--start">
+            <li><a class="nav__highlight active-site" href="index.html">Agencja</a></li>
+            <li><a class="nav__highlight" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav__highlight" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <!-- CONTACT INFO -->
-        <ul class="contact">
-          <li>
-            <a class="contact-info" href="mailto:info@devstudio.com">
-              <svg class="contact-info" width="16" height="12">
+        <ul class="nav__list nav__list--contact">
+          <li class="nav__highlight">
+            <a class="nav__link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contact-info" href="tel:+48111111111">
-              <svg class="contact-info" width="10" height="16">
+          <li class="nav__highlight">
+            <a class="nav__link" href="tel:+48111111111">
+              <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -124,7 +122,7 @@
         </div>
       </section>
       <!-- CREW -->
-      <section class="background-light section">
+      <section class="background--light section">
         <div class="container">
           <h2 class="container__title">Nasz zespół</h2>
           <ul class="crew">
@@ -259,7 +257,7 @@
       <section class="section">
         <div class="container">
           <h2 class="container__title">Nasi klienci</h2>
-          <ul class="clients">
+          <ul class="client">
             <li class="client__icon">
               <svg width="106" height="60.04">
                 <use href="./images/icons.svg#icon-Logo1"></use>
@@ -294,41 +292,41 @@
         </div>
       </section>
     </main>
-    <footer class="background-dark">
-      <div class="container footer">
+    <footer class="background--dark">
+      <div class="container container--footer">
         <div class="address">
-          <a class="logo brand-main-color" href="/index.html"
-            >web<span class="brand-tertiary-color">Studio</span></a
-          >
+          <a class="logo" href="/index.html">web<span class="logo--light">Studio</span></a>
           <!-- CONTACT INFO -->
-          <ul class="address-info">
-            <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li>
-              <a href="mailto:info@example.com">info@example.com</a>
+          <ul class="address--top">
+            <li class="address__info">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li class="address__info">
+              <a class="addres__info--link" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+            <li class="address__info">
+              <a class="addres__info--link" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
           </ul>
         </div>
         <!-- SOCIAL LINKS -->
         <div>
           <h3 class="container__title-s container__title-s--dark">dołącz do nas</h3>
           <ul class="social-media">
-            <li class="social-media__icon icons-dark">
+            <li class="social-media__icon social-media__icon--dark">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </li>
-            <li class="social-media__icon icons-dark">
+            <li class="social-media__icon social-media__icon--dark">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </li>
-            <li class="social-media__icon icons-dark">
+            <li class="social-media__icon social-media__icon--dark">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </li>
-            <li class="social-media__icon icons-dark">
+            <li class="social-media__icon social-media__icon--dark">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
@@ -340,8 +338,9 @@
           <label for="newsletter-email" class="container__title-s container__title-s--dark"
             >Zapisz się do newslettera</label
           >
-          <label class="newsletter-email"
+          <label class="newsletter__email"
             ><input
+              class="newsletter__input"
               id="newsletter-email"
               name="newsletter-email"
               type="email"
