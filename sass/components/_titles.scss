@@ -1,5 +1,5 @@
 .container {
-  &__title {
+  &__title-l {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -10,10 +10,11 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.17;
-  }
-  &__title-s--dark {
-    color: getColor('brand-tetriary');
-    margin: 12px 0 20px;
-    display: block;
+
+    &--light {
+      color: getColor('brand-tetriary');
+      margin: 12px 0 20px;
+      display: block;
+    }
   }
 }

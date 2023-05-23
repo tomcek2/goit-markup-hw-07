@@ -1,3 +1,9 @@
+.cards {
+  @extend %flex-center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
 .card {
   border: 1px solid #eeeeee;
   width: 370px;

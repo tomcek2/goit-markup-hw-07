@@ -1,5 +1,15 @@
 .section {
   padding: 94px 0;
+
+  &__technology {
+    padding-bottom: 0;
+  }
+  &--light {
+    background-color: getColor('background-light');
+  }
+  &--dark {
+    background-color: getColor('background-dark');
+  }
 }
 %flex-center {
   display: flex;
@@ -24,19 +34,5 @@
   &__buttons {
     @extend %flex-center;
     gap: 8px;
-  }
-  &__examples {
-    @extend %flex-center;
-    gap: 30px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-  }
-}
-.background {
-  &--light {
-    background-color: getColor('background-light');
-  }
-  &--dark {
-    background-color: getColor('background-dark');
   }
 }
